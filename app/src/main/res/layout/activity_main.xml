@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/gris"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="250dp"
+          android:layout_height="250dp"
+          android:id="@+id/img"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/sss"
+
+         >
+
+      </de.hdodenhof.circleimageview.CircleImageView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/browse"
+            android:layout_marginTop="20dp"
+            android:text="Choisir"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/design"
+
+            />
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:hint="Titre"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:textSize="15sp"
+        android:hint="Prix"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+        <TextView
+            android:id="@+id/sp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Choisissez votre catégorie :"
+
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="62dp"
+            android:textStyle="bold"/>
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Categorie"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/spinner"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:hint="Emplacement"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/num"
+        android:textSize="15sp"
+        android:hint="Numéro de téléphone"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t4"
+        android:textSize="15sp"
+        android:hint="Description"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Publié le :"
+
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="62dp"
+        android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/dater"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="140dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="-20dp"/>
+
+        <TextView
+            android:id="@+id/par_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="Par :"
+
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="230dp"
+            android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="265dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/add_submit"
+        android:background="@drawable/design"
+
+        android:onClick="uploadtofirebase"
+        android:textColor="@color/black"
+        android:text="Ajouter"
+        android:layout_marginLeft ="55dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-48dp"
+        android:id="@+id/annuler"
+        android:background="@drawable/design"
+        android:onClick="process"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:text="Annuler"
+        android:layout_marginLeft="220dp"
+        />
+
+
+</LinearLayout>
+
+</ScrollView>

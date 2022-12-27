@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home"
+        android:textStyle="bold">
+
+    </item>
+
+
+    <item android:title="Favoris"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:id="@+id/favoris"
+
+        android:textStyle="bold">
+    </item>
+
+    <item android:title="Profil"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profil"
+        android:textStyle="bold">
+    </item>
+
+    <item android:title="Login"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:id="@+id/login"
+        android:textStyle="bold">
+    </item>
+
+</menu>
